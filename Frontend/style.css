@@ -126,4 +126,31 @@ form button:hover {
     background-color: #dc3545;
     color: white;
 }
+/* ===== Background Floating Images ===== */
+/* ===== Background Floating Images (VISIBLE VERSION) ===== */
+.bg {
+    position: absolute;
+    width: 200px;
+                 /* increased visibility */
+    z-index: 1;                 /* visible but behind card */
+    animation: floatBg 14s ease-in-out infinite;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));
+}
 
+.bg1 { top: 6%; left: 4%; animation-delay: 0s; }
+.bg2 { bottom: 8%; left: 8%; animation-delay: 3s; }
+.bg3 { top: 10%; right: 6%; animation-delay: 6s; }
+.bg4 { bottom: 10%; right: 4%; animation-delay: 9s; }
+
+@keyframes floatBg {
+    0%   { transform: translateY(0px) scale(1); }
+    50%  { transform: translateY(-20px) scale(1.05); }
+    100% { transform: translateY(0px) scale(1); }
+}
+
+
+/* Make sure main content stays above background */
+.main-wrapper {
+    position: relative;
+    z-index: 2;
+}
