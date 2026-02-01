@@ -42,3 +42,39 @@ Tools
 VS Code
 
 Git & GitHub
+⚙️ Setup Instructions
+1. Clone the repository
+git clone https://github.com/shivi245/Task-Manager.git
+cd Task-Manager
+
+2. Backend setup
+cd backend
+python -m venv venv
+venv\Scripts\activate   # Windows
+pip install -r requirements.txt
+
+
+Create a .env file:
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_mysql_password
+DB_NAME=task_manager
+
+
+Run backend:
+
+python app.py
+
+3. Frontend setup
+
+Open frontend/index.html in browser
+OR run via Live Server in VS Code.
+
+## 📸 Screenshots
+
+### Home Page
+![Home Page](screenshots/screenshot-1-home.png)
+
+### Task Management
+![Task Management](screenshots/screenshot-2-tasks.png)
