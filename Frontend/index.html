@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+    <div class="container animate-card">
+        <h1>📋 Task Management App</h1>
+        <p class="subtitle">Organize your work beautifully</p>
+
+        <form id="taskForm">
+            <input type="text" id="title" placeholder="Task Title" required>
+            <textarea id="description" placeholder="Task Description"></textarea>
+            <button type="submit">➕ Add Task</button>
+        </form>
+
+        <div id="taskList"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
